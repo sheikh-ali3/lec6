@@ -20,11 +20,11 @@ function HomePage() {
 
   return (
     <div className='bg-blue-300 min-h-screen flex flex-col justify-center items-center'>
-      <h1 className='text-4xl font-bold text-black'>Counter Program</h1>
-      <h1 className='text-black font-semibold text-4xl'>{Value}</h1>
+      <h1 className='text-4xl font-bold text-yellow-300 md:text-[60px]'>Counter Program</h1>
+      <h1 className='text-black font-semibold text-4xl m-9'>{Value}</h1>
       <div className='space-x-7'>
-        <button onClick={ addHandler } className='bg-green-400 px-5 rounded-full '>ADD</button>
-        <button onClick={ subtractHandler } className='bg-red-400 px-5 rounded-full'>SUBTRACT</button>
+        <button onClick={ addHandler } className='bg-green-400 px-5 rounded-full md:p-[40px] md:text-[20px]'>ADD</button>
+        <button onClick={ subtractHandler } className='bg-red-400 px-5 rounded-full md:p-[40px] md:text-[20px]'>SUBTRACT</button>
       </div>
     </div>
   )
